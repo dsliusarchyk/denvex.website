@@ -12,10 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="DenVex" />
     <meta name="copyright" content="© 2025 DenVex" />
-    <meta name="description" content="DenVex - Full-Stack Developer. Coding the future." />
+    <meta name="description" content="DenVex - Full-Stack Developer. Coding the Future." />
     <meta name="keywords" content="DenVex, portfolio, web development, full-stack, JavaScript, React, Node.js" />
-    <title>DenVex - Portfolio</title>
+    <title>DenVex && Coding the Future</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
     <script defer src="./script.js"></script>
     <script defer src="./matrix.js"></script>
   </head>
@@ -36,9 +37,9 @@
         <button class="close-btn" onclick="toggleMenu()">✖</button>
         <ul>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#development-Areas" onclick="toggleMenu()">Development Areas</a></li>
+          <li><a href="#development-areas" onclick="toggleMenu()">Dev Fields</a></li>
           <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li>
-          <li><a href="#social-links" onclick="toggleMenu()">Find Me Online</a></li>
+          <li><a href="#social-links" onclick="toggleMenu()">My Socials</a></li>
         </ul>
       </div>
 
@@ -103,5 +104,9 @@
     <footer>
       <p>&copy; <span id="current-year"></span> DenVex. All rights reserved.</p>
     </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
