@@ -247,6 +247,13 @@ h3 {
     white-space: nowrap;
 }
 
+#about,
+#development-areas,
+#tech-stack,
+#social-links {
+    line-height: 1.8;
+}
+
 .open {
     text-align: center;
     white-space: nowrap;
