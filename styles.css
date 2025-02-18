@@ -280,6 +280,26 @@ h1,
 h2,
 h3 {
     text-align: center;
+    font-size: clamp(30px, 5vw, 36px);
+    white-space: nowrap;
+}
+
+.open {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #00ff00;
+    background-color: #111;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Додаткове вирівнювання підзаголовка */

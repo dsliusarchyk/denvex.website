@@ -39,6 +39,10 @@ document.addEventListener("click", function(event) {
     }
 });
 
+// Для автоматичного оновлення року
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
+
 // Ефект друкування тексту (анімація)
 document.addEventListener("DOMContentLoaded", function() {
     const text = "Welcome to DenVex";
