@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+    ============================================
+    DenVex Portfolio - Modern Developer Website
+    Created by: DenVex 🚀
+    Year: 2025
+    ============================================
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DenVex" />
+    <meta name="copyright" content="© 2025 DenVex" />
+    <meta name="description" content="DenVex - Full-Stack Developer. Coding the future." />
+    <meta name="keywords" content="DenVex, portfolio, web development, full-stack, JavaScript, React, Node.js" />
+    <title>DenVex - Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+    <script defer src="./matrix.js"></script>
+  </head>
+  <body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Кнопка відкриття/закриття меню -->
+    <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">
+      <img src="./icons/code-menu.svg" alt="Menu" />
+    </button>
+
+    <div class="container">
+      <header id="welcome">
+        <h1 id="typing-text">Welcome to DenVex</h1>
+        <p class="subtitle">Coding the Future</p>
+      </header>
+
+      <!-- Бокове меню -->
+      <div id="sideMenu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#development-Areas" onclick="toggleMenu()">Development Areas</a></li>
+          <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li>
+          <li><a href="#social-links" onclick="toggleMenu()">Find Me Online</a></li>
+        </ul>
+      </div>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>IT professional with <strong>15+ years of experience</strong> in business management and <strong>IT project execution</strong> across international markets. 100+ proj.</p>
+        <div class="flags">
+          <img src="flags/ukraine.png" alt="Ukraine" title="Ukraine" />
+          <img src="flags/kazakhstan.png" alt="Kazakhstan" title="Kazakhstan" />
+          <img src="flags/eu.png" alt="European Union" title="European Union" />
+          <img src="flags/usa.png" alt="United States" title="United States" />
+        </div>
+      </section>
+
+      <section id="development-Areas">
+        <h2>Development Areas</h2>
+        <ul>
+          <li>Frontend Development</li>
+          <li>Full-Stack Web Applications</li>
+          <li>Backend Development</li>
+          <li>DevOps & Cloud Deployments</li>
+          <li>Software Testing & QA</li>
+          <li>Algorithmic Programming</li>
+        </ul>
+      </section>
+
+      <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Redux, TypeScript</li>
+          <li>Node.js, Python, SQL</li>
+          <li>REST API, GraphQL</li>
+          <li>Git, DevOps, Docker</li>
+          <li>Testing (Jest, Cypress)</li>
+          <li>Algorithms & Data Structures</li>
+        </ul>
+      </section>
+
+      <section id="social-links">
+        <h2>Find Me Online</h2>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/denys-s-362a7581" target="_blank"> <img src="./icons/linkedin.svg" alt="LinkedIn" /> LinkedIn </a>
+          </li>
+          <li>
+            <a href="https://x.com/DS239433537" target="_blank"> <img src="./icons/twitter.svg" alt="Twitter" /> Twitter(X)</a>
+          </li>
+          <li>
+            <a href="https://dev.to/dsliusarchyk" target="_blank"> <img src="./icons/devto.svg" alt="Dev.to" /> Dev.to </a>
+          </li>
+          <li>
+            <a href="https://github.com/dsliusarchyk" target="_blank"> <img src="./icons/github.svg" alt="GitHub" /> GitHub </a>
+          </li>
+        </ul>
+        <br /><br />
+        <p>🚀 <strong>Open to collaboration and new opportunities!</strong></p>
+      </section>
+    </div>
+  </body>
+</html>
