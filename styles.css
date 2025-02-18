@@ -1,7 +1,7 @@
-/* Підключення шрифту */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-/* Глобальні стилі */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,34 +9,27 @@
     font-family: 'Source Code Pro', monospace;
 }
 
-/* Центруємо весь контент по вертикалі та горизонталі */
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Центруємо по вертикалі */
     align-items: center;
-    /* Центруємо по горизонталі */
     min-height: 100vh;
-    /* Мінімальна висота - 100% екрану */
     background-color: #0D0D0D;
     color: #00FF41;
     text-align: center;
 }
 
-/* Контейнер для всього контенту */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Вирівнюємо по вертикалі */
     align-items: center;
-    /* Центруємо по горизонталі */
     width: 100%;
     max-width: 600px;
 }
 
-/* Оформлення секцій */
 section {
     display: flex;
     flex-direction: column;
@@ -46,7 +39,6 @@ section {
     text-align: center;
 }
 
-/* Однакова ширина для всіх блоків контенту */
 #welcome,
 #about,
 #Development-Areas,
@@ -67,18 +59,14 @@ section {
 
 .flags img {
     width: 32px;
-    /* Розмір прапорів */
     height: auto;
     border-radius: 4px;
-    /* Невелике закруглення */
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
-    /* Легка тінь */
     transition: transform 0.2s ease-in-out;
 }
 
 .flags img:hover {
     transform: scale(1.1);
-    /* Збільшується при наведенні */
 }
 
 #social-links {
@@ -113,19 +101,16 @@ section {
 
 #social-links a img {
     width: 24px;
-    /* Розмір іконки */
     height: 24px;
     margin-right: 10px;
     vertical-align: middle;
 }
 
-/* Вирівнюємо заголовки секцій */
 section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Вирівнюємо списки всередині секцій */
 section ul {
     list-style-position: inside;
     padding: 0;
@@ -133,12 +118,10 @@ section ul {
     margin: 0 auto;
 }
 
-/* Вирівнюємо email у Contact */
 #contact p {
     text-align: center;
 }
 
-/* Бічне меню */
 .side-menu {
     position: fixed;
     top: 0;
@@ -151,7 +134,6 @@ section ul {
     padding-top: 60px;
 }
 
-/* Стилі для меню */
 .side-menu ul {
     list-style: none;
     padding: 0;
@@ -173,14 +155,11 @@ section ul {
     color: white;
 }
 
-/* Кнопка відкриття/закриття меню */
 .menu-btn {
     position: absolute;
     top: 130px;
-    /* Відстань від верху, регулюй під свій макет */
     left: 50%;
     transform: translateX(-50%);
-    /* Центруємо по горизонталі */
     background: none;
     border: none;
     color: #00FF41;
@@ -191,46 +170,33 @@ section ul {
 
 .menu-btn img {
     width: 40px;
-    /* Налаштування розміру */
     height: auto;
     transition: transform 0.3s;
 }
 
 .menu-btn:hover img {
     transform: scale(1.2);
-    /* Збільшення при наведенні */
 }
 
-/* Відображення відкритого меню */
-/* Повноекранне бургер-меню */
 .side-menu {
     position: fixed;
     top: 0;
     left: 0;
-    /* Змінюємо з -250px на 0 */
     width: 100%;
-    /* Тепер меню займає всю ширину екрану */
     height: 100%;
-    /* Тепер меню займає всю висоту екрану */
     background-color: rgba(10, 10, 10, 0.95);
-    /* Напівпрозорий чорний фон */
     box-shadow: none;
-    /* Прибираємо тінь */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.4s ease-in-out;
     transform: translateX(-100%);
-    /* Ховаємо меню за лівий край */
 }
 
-/* Відображення відкритого меню */
 .side-menu.open {
     transform: translateX(0);
-    /* Коли меню відкривається, воно займає весь екран */
 }
 
-/* Центруємо список навігації */
 .side-menu ul {
     list-style: none;
     padding: 0;
@@ -253,7 +219,6 @@ section ul {
     color: white;
 }
 
-/* Кнопка закриття меню */
 .close-btn {
     position: absolute;
     top: 20px;
@@ -265,7 +230,6 @@ section ul {
     cursor: pointer;
 }
 
-/* Фонова анімація */
 canvas {
     position: fixed;
     top: 0;
@@ -275,7 +239,6 @@ canvas {
     z-index: -1;
 }
 
-/* Вирівнювання заголовків */
 h1,
 h2,
 h3 {
@@ -302,7 +265,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Додаткове вирівнювання підзаголовка */
 .subtitle {
     text-align: center;
     font-size: 1.2em;
